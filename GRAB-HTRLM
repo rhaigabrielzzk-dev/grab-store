@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>GRAB STORE</title>
+
+<style>
+
+body {
+  background: url("grabstore.png") no-repeat center fixed;
+  background-size: cover;
+  color: white;
+  font-family: Arial;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  color: #00ff88;
+}
+
+/* CARDS INSANOS */
+.card {
+  background: url("card-bg.png") no-repeat center;
+  background-size: cover;
+  width: 250px;
+  padding: 20px;
+  margin: 20px;
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.card * {
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px red;
+  transform: scale(1.05);
+}
+
+/* BOTÃO */
+button {
+  background: red;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: black;
+  color: red;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>GRAB STORE</header>
+
+<div class="card">
+  <h2>ROBUX</h2>
+  <button onclick="entrar()">ENTRAR NO SERVIDOR</button>
+</div>
+
+<div class="card">
+  <h2>DESIGNS</h2>
+  <button onclick="entrar()">ENTRAR NO SERVIDOR</button>
+</div>
+
+<div class="card">
+  <h2>IMPULSOS</h2>
+  <button onclick="entrar()">ENTRAR NO SERVIDOR</button>
+</div>
+
+<script>
+function entrar() {
+  window.location.href = "https://discord.gg/9DVYNZHEpK";
+}
+</script>
+
+</body>
+</html>
